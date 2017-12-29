@@ -1,5 +1,5 @@
 html, body {
-  font-family: sans-serif;
+  font-family: monospace;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -20,14 +20,9 @@ h2 {
 }
 
 div {
-  padding-right: 30px;
+  padding-right: 32px;
   height: 100%;
   width: 100%;
-}
-
-video {
-  background-color: #000000;
-  border: 2px solid black;
 }
 
 .container {
@@ -40,12 +35,42 @@ video {
 }
 
 .nav {
-  background-color: #FFEE00;
+  background-color: #ffeded;
   max-width: 30%;
   min-width: 200px;
   flex: 1;
 }
 
+.main{
+  background-color: #ffeded;
+}
+
 .nav h1 {
   padding-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:230px;
+
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+li a.active {
+    background-color: #b9d3ee;
+    color: white;
+  }
+
+li a:hover:not(.active){
+    background-color: #dee0de;
+    color: white;
 }
